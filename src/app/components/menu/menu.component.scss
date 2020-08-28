@@ -4,3 +4,22 @@ nav{
   border-bottom: 1px solid $negro;
 
 }
+.navbar-nav{
+  border-top: 1px solid $negro;
+  font-family: $IBM;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: $negro;
+
+}
+.logoByNativo{
+font-family: $IBM;
+font-style: normal;
+font-weight: bold;
+font-size: 35px;
+line-height: 42px;
+color:$red;
+}
+
