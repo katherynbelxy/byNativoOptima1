@@ -1,11 +1,89 @@
-/* You can add global styles to this file, and also import other style files */
+//Colores
+$red: #FF3300;
+$gris: #3E464D;
+$grisClaro: #D5D5D5;
+$blanco: #EBEBEC;
+//Tipografia
+$IBM: 'IBM Plex Sans';
+//Titulos de la pagina
+.title {
+    font-family: $IBM;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 36px;
+}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+//texto de los parrafos
+.text {
+    font-family: $IBM;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+}
 
-$color:blue;
+//Botones negros
+.btnBlack {
+    background: black;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    font-family: $IBM;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 0;
+    position: relative;
+    cursor: pointer;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 13px;
+        background: url('./assets/iconos/arrow.svg') no-repeat center;
+        background-size: contain;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
 
-.toolbar{
-    color: $color !important;
+//Agregar clase si la flecha del botón apunta a la derecha
+.btnRight {
+    padding-left: 21px;
+    padding-right: 53px;
+    &::before {
+        right: 21px;
+        transform: translateY(-50%) rotate(180deg);
+    }
+}
 
+//Agregar clase si la flecha del botón apunta a la izquierda
+.btnLeft {
+    padding-left: 53px;
+    padding-right: 21px;
+    &::before {
+        left: 21px;
+    }
+}
+
+//Circulos
+@mixin circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.circleGray {
+    @include circle();
+    background: $gris;
+}
+
+.circleWhite {
+    @include circle();
+    background: $blanco;
+}
+
+.circleRed {
+    @include circle();
+    background: $red;
 }

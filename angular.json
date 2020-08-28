@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "byNativoOptima"
+  "defaultProject": "byNativoOptima",
+  "cli": {
+    "analytics": "d6cc3018-2094-49a8-9281-ea67d4f758fc"
+  }
 }
