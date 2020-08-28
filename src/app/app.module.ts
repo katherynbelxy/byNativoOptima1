@@ -9,7 +9,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ColorsComponent } from './components/colors/colors.component';
 import { LogosComponent } from './components/logos/logos.component';
 import { TypographyComponent } from './components/typography/typography.component';
-import { MatSliderModule } from '@angular/material/slider';
+import { MatMenuModule } from '@angular/material/menu';
 
 
 @NgModule({
@@ -25,7 +25,7 @@ import { MatSliderModule } from '@angular/material/slider';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatSliderModule,
+    MatMenuModule
   
   ],
   providers: [],
