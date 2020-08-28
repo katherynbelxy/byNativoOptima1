@@ -9,6 +9,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ColorsComponent } from './components/colors/colors.component';
 import { LogosComponent } from './components/logos/logos.component';
 import { TypographyComponent } from './components/typography/typography.component';
+import { MatSliderModule } from '@angular/material/slider';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { TypographyComponent } from './components/typography/typography.componen
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    MatSliderModule,
   
   ],
   providers: [],
