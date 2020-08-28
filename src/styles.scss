@@ -1,10 +1,4 @@
-//Colores
-$red: #FF3300;
-$gris: #3E464D;
-$grisClaro: #D5D5D5;
-$blanco: #EBEBEC;
-//Tipografia
-$IBM: 'IBM Plex Sans';
+@import "variables";
 //Titulos de la pagina
 .title {
     font-family: $IBM;
