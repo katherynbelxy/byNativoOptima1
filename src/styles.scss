@@ -1,13 +1,11 @@
 @import "variables";
-
-
 //Fuente principal 
 @font-face {
     font-family: $IBM;
-    src: url("./fonts/IBMPlexSans.otf");
+    src: url('./assets/fonts/IBMPlexSans-Medium.woff') format('woff');
 }
-//Reseteo de estilos 
 
+//Reseteo de estilos 
 html,
 body,
 div,
@@ -115,7 +113,8 @@ body {
     overflow-x: hidden !important;
     -webkit-font-smoothing: antialiased !important;
     text-rendering: optimizeLegibility;
-    background-color: #EBEBEC;;
+    background-color: #EBEBEC;
+    ;
 }
 
 ol,
@@ -141,7 +140,6 @@ table {
     border-spacing: 0;
 }
 
-
 //Titulos de la pagina
 .title {
     font-family: $IBM;
@@ -158,6 +156,7 @@ table {
     font-size: 14px;
     line-height: 20px;
 }
+
 //Titulos Footer
 .titleFooter {
     font-family: $IBM;
@@ -166,34 +165,33 @@ table {
     font-size: 12px;
     line-height: 17px;
 }
+
 //Texto Footer
 .textFooter {
     font-family: $IBM;
     font-weight: bold;
     font-size: 18px;
     line-height: 25px;
-
-//texto para enlaces de descarga
-.textDownload {
-    font-family: $IBM;
-    font-size: 20px;
-    line-height: 120%;
-    font-weight: 500;
-    position: relative;
-    &::before {
-        content: '';
-        position: absolute;
-        width: 12px;
-        height: 12px;
-        background: url('./assets/iconos/arrowDown.svg') center no-repeat;
-        background-size: contain;
-        left: 100px;
-        top: 50%;
-        transform: translateY(-50%);
-        cursor: pointer;
+    //texto para enlaces de descarga
+    .textDownload {
+        font-family: $IBM;
+        font-size: 20px;
+        line-height: 120%;
+        font-weight: 500;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            background: url('./assets/iconos/arrowDown.svg') center no-repeat;
+            background-size: contain;
+            left: 100px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
     }
-}
-
 }
 
 //Botones negros
