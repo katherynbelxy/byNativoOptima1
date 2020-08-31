@@ -1,1 +1,126 @@
-<p>colors works!</p>
+<div class="container-fluid" style="margin-top: 60px; overflow: hidden;">
+    <div class="row">
+        <div class="col-sm bgG2">
+            <div class="cic m-t-115">
+                <div class="title">
+                    Colors
+                </div>
+                <div class="text m-t-30">
+                    Our brand colors connect directly to our tower names – Onyx, Red, White – but we are using subtle variations on standard shades. Rather than true black, Onyx is treated as Pantone Cool Gray 11, and rather than pure white, White is actually Pantone Cool
+                    Gray 1. To accent these values of gray, Pantone Bright Red U is employed for strong pop of color.
+                </div>
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="row no-gutters">
+                <div class="col-sm bgG">
+                    <div class="contentText cW">
+                        <div class="textHex">
+                            CMYK: 73 , 60 , 52 , 40 <br> RGB: 62 , 70 , 77<br> HEX: #3E464D<br> PMS: Cool Gray 11
+                        </div>
+                        <div class="titleHex">
+                            Onyx
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-sm bgW">
+                    <div class="contentText">
+                        <div class="textHex">
+                            CMYK: 0 , 0 , 0 , 8<br> RGB: 235 , 235 , 236<br> HEX: #EBEBEC<br> PMS: Cool Gray 1
+                        </div>
+                        <div class="titleHex">
+                            White
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm bgR">
+                    <div class="contentText cW">
+                        <div class="textHex">
+                            CMYK: 0 , 93 , 100 , 0<br> RGB: 255 , 51 , 0<br> HEX: #FF3300<br> PMS: Bright Red U
+                        </div>
+                        <div class="titleHex">
+                            Red
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="content2">
+            <div class="title">
+                Understanding color
+            </div>
+            <div class="row no-gutters m-t-30">
+                <div class="col-sm">
+                    <div class="cic">
+                        <div class="text">
+                            The first thing you need to keep in mind is that colour on screen is different to colour in print. If you’re reading this from a screen the colour variations you’ll see are created by mixing different colours of light. But if you’ve printed it out and
+                            you’re looking at a piece of paper, the colours will have been made up by mixing dark inks together. 100% saturation of screen colour therefore equals (bright) white, 100% saturation of ink colour is (dark) black.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm" style="margin-left: 22px;">
+                    <div class="cic">
+                        <div class="text">
+                            So because colour is made differently when it’s on screen to the way it’s put together on paper the formulas that are used are different too.<br> <br>There are four main colour specifications that you’re likely to see: RGB,
+                            Hex #, CMYK and Pantone matching system.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="title m-t-50">
+                Print colors
+            </div>
+            <hr>
+            <div class="row no-gutters m-t-61">
+                <div class="col-sm d-inline-flex">
+                    <div class="text2">
+                        CMYK
+                    </div>
+                    <div class="circleGray m-l-22" data-toggle="tooltip" data-placement="top" title="CMYK: 73 , 60 , 52 , 40"></div>
+                    <div class="circleWhite m-l-20" data-toggle="tooltip" data-placement="top" title="CMYK: 0 , 0 , 0 , 8"></div>
+                    <div class="circleRed m-l-20" data-toggle="tooltip" data-placement="top" title="CMYK: 0 , 93 , 100 , 0"></div>
+                </div>
+                <div class="col-sm d-inline-flex">
+                    <div class="text2">
+                        Pantone
+                    </div>
+                    <div class="circleGray m-l-22" data-toggle="tooltip" data-placement="top" title="PMS: Cool Gray 11"></div>
+                    <div class="circleWhite m-l-20" data-toggle="tooltip" data-placement="top" title="PMS: Cool Gray 1"></div>
+                    <div class="circleRed m-l-20" data-toggle="tooltip" data-placement="top" title="PMS: Bright Red U"></div>
+                </div>
+            </div>
+            <div class="title m-t-81">
+                Screen colors
+            </div>
+            <hr>
+            <div class="row no-gutters m-t-61">
+                <div class="col-sm d-inline-flex">
+                    <div class="text2">
+                        RGB
+                    </div>
+                    <div class="circleGray m-l-22" data-toggle="tooltip" data-placement="top" title="RGB: 62 , 70 , 77"></div>
+                    <div class="circleWhite m-l-20" data-toggle="tooltip" data-placement="top" title="RGB: 235 , 235 , 236"></div>
+                    <div class="circleRed m-l-20" data-toggle="tooltip" data-placement="top" title="RGB: 255 , 51 , 0"></div>
+                </div>
+                <div class="col-sm d-inline-flex">
+                    <div class="text2">
+                        HEX
+                    </div>
+                    <div class="circleGray m-l-22" data-toggle="tooltip" data-placement="top" title="HEX: #3E464D"></div>
+                    <div class="circleWhite m-l-20" data-toggle="tooltip" data-placement="top" title="HEX: #EBEBEC"></div>
+                    <div class="circleRed m-l-20" data-toggle="tooltip" data-placement="top" title="HEX: #FF3300"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a [routerLink]="'/Logos'">
+        <div class="btnBlack btnLeft">Logos</div>
+    </a>
+    <a [routerLink]="'/Typography'">
+        <div class="btnBlack btnRight">Typography</div>
+    </a>
+</div>

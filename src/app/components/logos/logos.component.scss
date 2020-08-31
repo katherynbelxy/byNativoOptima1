@@ -1,0 +1,103 @@
+@import '../../../variables';
+.col-sm {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.sliderItems {
+    width: 300%;
+    transition: .5s;
+}
+
+.slide {
+    overflow: hidden;
+    position: relative;
+}
+
+.section1 {
+    .slide {
+        width: 55.5vw;
+        float: left;
+        .name {
+            margin: 223px auto 223px auto;
+        }
+        &:nth-child(1) {
+            background: $gris;
+        }
+        &:nth-child(2) {
+            background: $blanco;
+        }
+        &:nth-child(3) {
+            background: $red;
+        }
+    }
+}
+
+.section2 {
+    .slide {
+        width: 43.4vw;
+        float: right;
+        .name {
+            margin: 214px auto 214px auto;
+        }
+        &:nth-child(1) {
+            background: $red;
+        }
+        &:nth-child(2) {
+            background: $blanco;
+        }
+        &:nth-child(3) {
+            background: $gris;
+        }
+    }
+}
+
+.section3 {
+    .box {
+        overflow: hidden;
+        width: 55.5vw;
+        .name {
+            margin: 67px auto 67px auto;
+        }
+        &:nth-child(1) {
+            background: $gris;
+        }
+        &:nth-child(2) {
+            background: $red;
+        }
+        &:nth-child(3) {
+            background: $blanco;
+        }
+    }
+}
+
+.section4 {
+    .logo {
+        margin: 50px auto 50px auto;
+    }
+    .logo2 {
+        margin: 160px auto 160px auto;
+    }
+}
+
+.section5 {
+    .logoBig {
+        margin: 66px auto 186.87px auto;
+    }
+    .cic {
+        margin-left: 0;
+    }
+    .cic2 {
+        max-width: 1019px;
+        margin: 0 auto;
+    }
+    .btnBlack {
+        float: right;
+        margin-right: 107px;
+    }
+}
