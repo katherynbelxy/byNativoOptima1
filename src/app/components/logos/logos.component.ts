@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LogosComponent implements OnInit {
 
+  //Variable para slider
+  slider: number = 0
+  slider2: number = -200
+
   constructor() { }
 
   ngOnInit(): void {

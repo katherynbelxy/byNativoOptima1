@@ -1,1 +1,151 @@
-<p>logos works!</p>
+<div class="container-fluid" style="margin-top: 60px;">
+    <div class="row">
+        <div class="col-sm">
+            <div class="m-t-125 cic">
+                <div class="title">
+                    Optima wordmark
+                </div>
+                <div class="text m-t-30">
+                    The Optima wordmark features an allcap bespoke typeface that moves from thick to thin, heavy to light. This creates dynamic movement and a sense of direction in an otherwise clean, confident corporate type treatment. It also lets us pull out the heaviest
+                    letter, O, as an icon for various graphic treatments. The transition between weights that occurs in the wordmark creates a sense of change and growth.
+                </div>
+                <div class="textDownload m-t-40">
+                    Download
+                </div>
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="slider section1">
+                <div class="sliderItems" [ngStyle]="{'margin-left': slider+'%'}">
+                    <div class="slide">
+                        <div class="nameRed name"></div>
+                    </div>
+                    <div class="slide">
+                        <div class="nameGray name"></div>
+                    </div>
+                    <div class="slide">
+                        <div class="nameWhite name"></div>
+                    </div>
+                </div>
+                <div class="arrowSlide arrowLeft" [class.arrowBlack]="slider == -100" *ngIf="slider < 0" (click)="slider = slider + 100"></div>
+                <div class="arrowSlide arrowRight" [class.arrowBlack]="slider == -100" *ngIf="slider > -200" (click)="slider = slider - 100"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm" style="max-width: 43.4vw">
+            <div class="slider section2">
+                <div class="sliderItems" [ngStyle]="{'margin-left': slider2+'%'}">
+                    <div class="slide">
+                        <div class="nameWhite2 name"></div>
+                    </div>
+                    <div class="slide">
+                        <div class="nameGray2 name"></div>
+                    </div>
+                    <div class="slide">
+                        <div class="nameRed2 name"></div>
+                    </div>
+                </div>
+                <div class="arrowSlide arrowLeft" [class.arrowBlack]="slider2 == -100" (click)="slider2 = slider2 + 100" *ngIf="slider2 < 0"></div>
+                <div class="arrowSlide arrowRight" [class.arrowBlack]="slider2 == -100" (click)="slider2 = slider2 - 100" *ngIf="slider2 > -200 "></div>
+            </div>
+        </div>
+        <div class="col-sm bgW">
+            <div class="m-t-115 cic">
+                <div class="title">
+                    Secondary wordmark
+                </div>
+                <div class="text m-t-30">
+                    Our three main buildings are each named for colors inspired by onyx, coral and pearl – natural materials found in Mexico. Each sub-brand features the main Optima wordmark in that building’s titular color followed by its name beneath it. Each of these
+                    lockups will be used to graphically define their respective buildings, from environmental design to marketing materials to digital experiences.
+                </div>
+                <div class="textDownload m-t-40">
+                    Download
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm">
+            <div class="m-t-138 cic">
+                <div class="title">
+                    Secondary logos
+                </div>
+                <div class="text m-t-30">
+                    Alternate uses of the building have been created as a purpose to be bold, direct and impactful. The icon of Optima has been integrated in order to created cohesiveness among the branding while creating a unique identity for each building that can stand
+                    alone while together as a group.
+                </div>
+                <div class="textDownload m-t-40">
+                    Download
+                </div>
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="section3">
+                <div class="box">
+                    <div class="nameRed3 name"></div>
+                </div>
+                <div class="box">
+                    <div class="nameWhite3 name"></div>
+                </div>
+                <div class="box">
+                    <div class="nameGray3 name"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm" style="max-width: 43.4vw">
+            <div class="row no-gutters section4">
+                <div class="col-sm">
+                    <div class="row no-gutters">
+                        <div class="col-sm bgW">
+                            <div class="logoGray logo"></div>
+                        </div>
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="col-sm bgR">
+                            <div class="logoWhite logo"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm bgG">
+                    <div class="logoRed logo2"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="cic m-t-125">
+                <div class="title">
+                    Brand icon
+                </div>
+                <div class="text m-t-30">
+                    The O becomes iconic when used across various type and logo applications. As the “O” in Tower, it connects each building’s name back to the mother brand without printing the word Optima near it. As we repeat this device across our marketing and user experience,
+                    the “O” becomes an iconic callback that keeps elements connected and concise.
+                </div>
+                <div class="textDownload m-t-40">
+                    Download
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm section5">
+            <div class="cic2">
+                <div class="cic m-t-115">
+                    <div class="title">
+                        Logo clear space
+                    </div>
+                    <div class="text m-t-30">
+                        It is important to give the logo adequate space in the layout. The lockup should live surrounded by clear, empty space of a depth equal to the dimensions of our O icon. This allows the marque to be clearly seen and understood without interference from
+                        other graphical elements.
+                    </div>
+                </div>
+            </div>
+            <div class="logoBig"></div>
+            <a [routerLink]="'/Colors'">
+                <div class="btnBlack btnRight">Colors</div>
+            </a>
+        </div>
+    </div>
+</div>

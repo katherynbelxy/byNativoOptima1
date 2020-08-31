@@ -1,4 +1,10 @@
 @import "variables";
+//Tipografia
+@font-face {
+    font-family: $IBM;
+    src: url('./assets/fonts/IBMPlexSans-Medium.woff') format('woff');
+}
+
 //Titulos de la pagina
 .title {
     font-family: $IBM;
@@ -16,10 +22,31 @@
     line-height: 20px;
 }
 
+//texto para enlaces de descarga
+.textDownload {
+    font-family: $IBM;
+    font-size: 20px;
+    line-height: 120%;
+    font-weight: 500;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        background: url('./assets/iconos/arrowDown.svg') center no-repeat;
+        background-size: contain;
+        left: 100px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+}
+
 //Botones negros
 .btnBlack {
-    background: black;
-    color: white;
+    background: $negro;
+    color: $blanco2;
     font-weight: 500;
     font-size: 20px;
     line-height: 120%;
@@ -80,4 +107,155 @@
 .circleRed {
     @include circle();
     background: $red;
+}
+
+//Palabras Optima
+@mixin word {
+    width: 320px;
+    height: 55px;
+    background-size: contain;
+    background: center no-repeat;
+}
+
+.nameRed {
+    @include word();
+    background-image: url('./assets/iconos/nameRed.svg');
+}
+
+.nameGray {
+    @include word();
+    background-image: url('./assets/iconos/nameGray.svg');
+}
+
+.nameWhite {
+    @include word();
+    background-image: url('./assets/iconos/nameWhite.svg');
+}
+
+//Palabras Optima con nombre de torre
+@mixin word2 {
+    width: 277px;
+    height: 72px;
+}
+
+.nameRed2 {
+    @include word();
+    @include word2();
+    background-image: url('./assets/iconos/nameRed2.svg');
+}
+
+.nameGray2 {
+    @include word();
+    @include word2();
+    background-image: url('./assets/iconos/nameGray2.svg');
+}
+
+.nameWhite2 {
+    @include word();
+    @include word2();
+    background-image: url('./assets/iconos/nameWhite2.svg');
+}
+
+//Palabras de Optima logos
+@mixin word3 {
+    height: 35px;
+}
+
+.nameRed3 {
+    @include word();
+    @include word3();
+    width: 350.83px;
+    background-image: url('./assets/iconos/nameRed3.svg');
+}
+
+.nameGray3 {
+    @include word();
+    @include word3();
+    width: 389.27px;
+    background-image: url('./assets/iconos/nameGray3.svg');
+}
+
+.nameWhite3 {
+    @include word();
+    @include word3();
+    width: 406.34px;
+    background-image: url('./assets/iconos/nameWhite3.svg');
+}
+
+//Letras de Optima logo
+@mixin logo() {
+    width: 150px;
+    height: 150px;
+    background-size: contain;
+    background: no-repeat center;
+}
+
+.logoGray {
+    @include logo();
+    background-image: url('./assets/iconos/logoGray.svg');
+}
+
+.logoWhite {
+    @include logo();
+    background-image: url('./assets/iconos/logoWhite.svg');
+}
+
+.logoRed {
+    @include logo();
+    width: 180px;
+    height: 180px;
+    background-image: url('./assets/iconos/logoRed.svg');
+}
+
+//Logo nombre completo y grande con grid
+.logoBig {
+    width: 1019px;
+    height: 391px;
+    background: url('./assets/iconos/logoBig.svg') no-repeat center;
+    background-size: contain;
+}
+
+//Flechas para slide
+.arrowSlide {
+    width: 42px;
+    height: 27px;
+    cursor: pointer;
+    position: absolute;
+    background: url('./assets/iconos/arrrowSlideWhite.svg') center no-repeat;
+    background-size: contain;
+    bottom: 30px;
+    &.arrowBlack {
+        background-image: url('./assets/iconos/arrowSlideBlack.svg');
+    }
+    &.arrowRight {
+        right: 30px;
+    }
+    &.arrowLeft {
+        left: 30px;
+        transform: rotate(180deg);
+    }
+}
+
+//Colores de fondo
+.bgG {
+    background: $gris;
+}
+
+.bgG2 {
+    background: $grisClaro;
+}
+
+.bgW {
+    background: $blanco;
+}
+
+.bgR {
+    background: $red;
+}
+
+//Contenedor de textos
+.cic {
+    max-width: 394px;
+    margin-left: auto;
+    margin-right: auto;
 }
