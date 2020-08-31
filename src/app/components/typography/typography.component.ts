@@ -9,6 +9,15 @@ export class TypographyComponent implements OnInit {
 
   constructor() { }
 
+  saverange(newValue) {
+   console.log(newValue);
+  } 
+  
+valueChanged(e) {
+  console.log('e', e);
+}
+
+
   ngOnInit(): void {
   }
 

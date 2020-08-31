@@ -1,1 +1,77 @@
-<p>typography works!</p>
+<div class="container-fluid">
+    <section class="row section1Typography m-t-60">
+        <div class="col-6 colorRed" >
+            <div class="tp1 m-l-107 ">
+            <p contenteditable="true" > Try typing here and change the settings to see the brand fonts </p>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="tp2"> 
+           
+                    <p class="title">
+                        Typography
+                    </p>
+                    <p class="text m-t-30">
+                        The Optima tone is clean and
+                        confident, with a touch of
+                        warmth. We’re very proud of
+                        our community and what it
+                        offers, that’s our Typography selection says about us. We believe that it can
+                        have a transformative impact a
+                        company and its professionals,
+                        and we must always sound
+                        excited to share our vision
+                        with likeminded people.
+                    </p>
+        
+                    <div class="m-t-40">
+                        <div class="form-row">
+                            <div class="col">
+                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                    <option value="1" selected>Termina</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                    <option  value="1" selected>Regular</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-t-50">
+                        <div class="form-row">
+                            <div class="col">
+
+
+
+
+                                <input type="range"  class="custom-range" min="10" max="90" (input)="valueChanged($event.target.value)" id="customRange1">
+
+                            </div>
+                            <div class="col">
+                                <input type="range" (change)="saverange($event)" class="custom-range" min="10" max="90" id="customRange2">
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section class="row">
+        <div class="col-6">
+            <div>
+                <p> Try typing here and change the settings to see the brand fonts </p>
+            </div>
+        </div>
+        <div class="col-6">
+            <div>
+                <p> Try typing here and change the settings to see the brand fonts </p>
+            </div>
+        </div>
+
+    </section>
+
+</div>

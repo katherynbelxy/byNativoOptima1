@@ -15,10 +15,11 @@ border-top: 1px solid $negro;
     background-image: url("../../../assets/iconos/LogoNativoFooter.svg");
     width: 44px;
     height: 35px;
+    margin-top: 10px;
 }
 footer{
     bottom: 0;
-    position: absolute;
+    position: relative;
     width: 100%;
     background-color:$blanco2 ;
 
