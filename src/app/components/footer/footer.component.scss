@@ -1,28 +1,28 @@
 @import '../../../variables';
-
-.navbar.footer{
-
-width: 100%;
-padding-top: 0px;;
-}
-.card-vacio{
-height: 55px;
-border-top: 1px solid $negro;
-
+.navbar.footer {
+    width: 100%;
+    padding-top: 0px;
+    ;
 }
 
-.LogoNativo{
+.card-vacio {
+    height: 55px;
+    border-top: 1px solid $negro;
+}
+
+.LogoNativo {
     background-image: url("../../../assets/iconos/LogoNativoFooter.svg");
     width: 44px;
     height: 35px;
 }
-footer{
-    bottom: 0;
-    position: absolute;
-    width: 100%;
-    background-color:$blanco2 ;
 
+footer {
+    // bottom: 0;
+    // position: absolute;
+    width: 100%;
+    background-color: $blanco2;
 }
-.nav{
+
+.nav {
     border-top: 1px solid $negro;
 }
