@@ -1,17 +1,18 @@
 <div class="container-fluid sectionTypography">
     <section class="row section1Typography p-t-61">
-        <div class="col-sm colorRed">
-            <div class="tp1 m-l-107 " [ngStyle]="{'font-size': fontSize+'px','line-height': lineHeight+'px'}">
-                <p contenteditable="true"> Try typing here and change the settings to see the brand fonts </p>
+        <div class="col-sm-12 col-md-6 section1TypographyDiv colorRed">
+            <div class="tp1 m-l-107 " [ngStyle]="{'font-size': fontSize+'px','line-height': lineHeight+'px','font-family': opcionSeleccionado,'font-weight': opcionSeleccionadoCapturarFont}">
+                <p contenteditable="true" (click)="clickparpadeo()"  class="parrafoLineParpadea"><span *ngIf="noneSisplay"  class="LineParpadea"></span> Try typing here and change the settings to see the brand fonts </p>
             </div>
         </div>
-        <div class="col-sm">
+        <div class="col-sm-12 col-md-6 section1TypographyDiv">
             <div class="tp2">
 
                 <p class="title">
                     Typography
                 </p>
                 <p class="text m-t-30">
+                    
                     The Optima tone is clean and
                     confident, with a touch of
                     warmth. We’re very proud of
@@ -27,17 +28,32 @@
                 <div class="m-t-40">
                     <div class="form-row">
                         <div class="col">
-                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                <option value="1" selected>Termina</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
+                            <select [(ngModel)]="opcionSeleccionado" (change)="capturarFont()"  class="custom-select mr-sm-2" id="inlineFormCustomSelect1">
+                                <option value="termina" selected>Termina</option>
+                                <option value="Brom Sans">Brom Sans</option>
                             </select>
                         </div>
-                        <div class="col">
-                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                <option value="1" selected>Regular</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
+                        <div class="col" *ngIf="opcionSeleccionado=='termina'">
+                            <select [(ngModel)]="opcionSeleccionadoCapturarFont"  class="custom-select mr-sm-2" id="inlineFormCustomSelect2">
+                                <option value="200" >Extra Light</option>
+                                <option value="300">Light</option>
+                                <option value="100">Thin</option>
+                                <option value="400" selected>Regular</option>
+                                <option value="600">Demi</option>
+                                <option value="500">Medium</option>
+                                <option value="700">Bold</option>
+                                <option value="800">Heavy</option>
+                                <option value="900">Black</option>
+                            </select>
+                        </div>
+                        <div class="col" *ngIf="opcionSeleccionado=='Brom Sans'">
+                            <select [(ngModel)]="opcionSeleccionadoCapturarFont"  class="custom-select mr-sm-2" id="inlineFormCustomSelect2">
+                                <option value="300">Light</option>
+                                <option value="100">Thin</option>
+                                <option value="400" selected>Regular</option>
+                                <option value="500">Medium</option>
+                                <option value="600">SemiBold</option>
+                                <option value="700">Bold</option>
                             </select>
                         </div>
                     </div>
@@ -46,14 +62,14 @@
                     <div class="form-row">
                         <div class="col">
                             <div class="input-group">
-                                <span class="input-group-addon"><img src="../../../assets/iconos/Text_Size_Icon.svg"></span>
+                                <span class="input-group-addon iconSelect1"><img src="../../../assets/iconos/Text_Size_Icon.svg"></span>
                                 <input type="range" class="custom-range form-control" min="10" max="90"
                                     (input)="valueChangedFontSize($event.target.value)" id="customRange1">
                             </div>
                         </div>
                         <div class="col">
                             <div class="input-group">
-                                <span class="input-group-addon"><img src="../../../assets/iconos/Leading_Icon.svg"></span>
+                                <span class="input-group-addon iconSelect2"><img src="../../../assets/iconos/Leading_Icon.svg"></span>
                                 <input type="range" (input)="valueChangedLineheight($event.target.value)"
                                     class="custom-range form-control" min="10" max="100" id="customRange2">
                             </div>
@@ -64,16 +80,16 @@
         </div>
     </section>
     <section class="row section2Typography">
-        <div class="col-sm ">
+        <div class="col-sm-12 col-md-6 ">
             <div class="Sectio2Tp1 m-l-107">
                 <div class="texCentersection2">             
                     <p class="title">
                         Termina
                     </p>
-                    <p>
+                    <p class="SubTitle m-t-20 m-b-30">
                         For marketing use
                     </p>
-                    <p class="text m-t-30">
+                    <p class="text m-t-30 m-b-40">
                         The Optima tone is clean and
                         confident, with a touch of
                         warmth. We’re very proud of
@@ -85,14 +101,14 @@
                         excited to share our vision
                         with likeminded people.
                     </p>
-                    <a>
+                    <a class="textDownload colorBlack">
                         Get it here
                     </a>
                 </div>
             </div>
             
         </div>
-        <div class="col-sm ">
+        <div class="col-sm-12 col-md-6 ">
             <div class="Sectio2Tp2 m-r-107">
                 <div class="textoimgTypo"> </div>
             </div>
@@ -102,13 +118,77 @@
 
     </section>
     <section class="row section3Typography">
-        <div class="col-sm">
+        <div class="col-sm-12 col-md-6 ">
             <div class="Sectio3Tp1 m-l-107">
+
+                <table class="tableColor">
+                    <tr>
+                        <td class="fontw1">a</td>
+                        <td class="fontw2">a</td>
+                        <td class="fontw3">a</td>
+                        <td class="fontw4">a</td>
+                        <td class="fontw5">a</td>
+                        <td class="fontw6">a</td>
+                        <td class="fontw7">a</td>
+                        <td class="fontw8">a</td>
+                    </tr>
+                    <tr>
+                        <td class="fontw1">b</td>
+                        <td class="fontw2">b</td>
+                        <td class="fontw3">b</td>
+                        <td class="fontw4">b</td>
+                        <td class="fontw5">b</td>
+                        <td class="fontw6">b</td>
+                        <td class="fontw7">b</td>
+                        <td class="fontw8">b</td>
+                    </tr>
+                    <tr>
+                        <td class="fontw1">c</td>
+                        <td class="fontw2">c</td>
+                        <td class="fontw3">c</td>
+                        <td class="fontw4">c</td>
+                        <td class="fontw5">c</td>
+                        <td class="fontw6">c</td>
+                        <td class="fontw7">c</td>
+                        <td class="fontw8">c</td>
+                    </tr>
+                    <tr>
+                        <td class="fontw1">d</td>
+                        <td class="fontw2">d</td>
+                        <td class="fontw3">d</td>
+                        <td class="fontw4">d</td>
+                        <td class="fontw5">d</td>
+                        <td class="fontw6">d</td>
+                        <td class="fontw7">d</td>
+                        <td class="fontw8">d</td>
+                    </tr>
+                    <tr>
+                        <td class="fontw1">e</td>
+                        <td class="fontw2">e</td>
+                        <td class="fontw3">e</td>
+                        <td class="fontw4">e</td>
+                        <td class="fontw5">e</td>
+                        <td class="fontw6">e</td>
+                        <td class="fontw7">e</td>
+                        <td class="fontw8">e</td>
+                    </tr>
+                    <tr>
+                        <td class="fontw1">f</td>
+                        <td class="fontw2">f</td>
+                        <td class="fontw3">f</td>
+                        <td class="fontw4">f</td>
+                        <td class="fontw5">f</td>
+                        <td class="fontw6">f</td>
+                        <td class="fontw7">f</td>
+                        <td class="fontw8">f</td>
+                    </tr>
+
+                </table>
 
             </div>
             
         </div>
-        <div class="col-sm ">
+        <div class="col-sm-12 col-md-6  ">
             <div  class="Sectio3Tp2 m-r-107">
                 <div class="textoimgTypoNum"></div>
             </div>
@@ -119,15 +199,15 @@
     </section>
 
     <section class="row section4Typography">
-        <div class="col-sm ">
+        <div class="col-sm-12 col-md-6  ">
             <div class="texCentersection4">             
                 <p class="title">
                     Brom Sans
                 </p>
-                <p>
+                <p class="SubTitle m-t-20 m-b-30">
                     Custom typeface
                 </p>
-                <p class="text m-t-30">
+                <p class="text m-t-30 m-b-40">
                     This custom typeface was created inhouse
                     and has a modern, dynamic
                     character with a variable aesthetic.
@@ -137,7 +217,7 @@
                     bespoke typeface can be applied to
                     signage, headlines, titles and more
                 </p>
-                <a>
+                <a class="textDownload colorBlack dowImage">
                     Download
                 </a>
             </div>

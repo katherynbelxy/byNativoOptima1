@@ -8,6 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class TypographyComponent implements OnInit {
   fontSize=50;
   lineHeight=60;
+  opcionSeleccionado: string  = 'termina';
+  opcionSeleccionadoCapturarFont: string  = '400';
+  noneSisplay=true;
+
   constructor() { }
 
   saverange(newValue) {
@@ -20,7 +24,20 @@ valueChangedFontSize(e) {
 valueChangedLineheight(e) {
   this.lineHeight=e;
 }
+capturarFont(){
+  if(this.opcionSeleccionado=="termina"){
+    this.opcionSeleccionadoCapturarFont="400";
 
+  }else{
+    this.opcionSeleccionadoCapturarFont="400";
+
+  }
+
+}
+clickparpadeo(){
+
+  this.noneSisplay=false;
+}
 
   ngOnInit(): void {
   }

@@ -6,9 +6,12 @@
    position: relative;
 }
 .section1Typography{
+
+    background: $blanco2;
+}
+.section1TypographyDiv { 
     min-height: 730px;
     height: auto;
-    background: $blanco2;
 }
 .section1Typography .tp1{
     font-style: normal;
@@ -55,7 +58,10 @@ input[type='range'],
 input[type='range']::-webkit-slider-runnable-track,
 input[type='range']::-webkit-slider-thumb {
   -webkit-appearance: none;
-  outline: none;
+  outline:none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+
 }
 
 
@@ -146,6 +152,7 @@ input[type=range]::-webkit-slider-runnable-track {
     transform: translate(-50%, -50%);
     background-repeat: no-repeat;
     background-position: center;
+    background-size:contain ;
 }
 .imgABC{
     background-image: url("../../../assets/imgTypography/Brom_Alphabet.svg");
@@ -195,8 +202,146 @@ input[type=range]::-webkit-slider-runnable-track {
     position: relative;
 }
 .Sectio3Tp1{
-    background-color: red;
+    background-color: #EBEBEC;
     margin-right: -15px;
     height: 100%;
+    position: relative;
 
 }
+
+
+
+.iconSelect1{
+    padding-right: 15px;
+    line-height: 20px;
+
+}
+.iconSelect2{
+    padding-right: 15px;
+    margin-top: -5px;
+    margin-left: 10px;
+}
+
+
+  #inlineFormCustomSelect1,#inlineFormCustomSelect2 {
+    background-image: url("../../../assets/iconos/arrowselect.svg");
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position-y: center;
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    background-color: #EBEBEB;
+  }
+
+  #inlineFormCustomSelect1 select::-ms-expand,#inlineFormCustomSelect2 select::-ms-expand {
+    display: none;
+}
+.colorBlack{
+    color: $negro;
+}
+
+.textDownload::before{
+    transform: rotate(270deg);
+    height: 15px;
+    width: 15px;
+    margin-left: 8px;
+    margin-top: -4px;
+
+}
+.textDownload.dowImage::before{
+    transform: rotate(0deg);
+    margin-top: 0px;
+}
+.LineParpadea{
+    height: 50px;
+    background: white;
+    width: 1px;
+    position: absolute;
+    margin-left: -5px;
+    animation-name: parpadeo;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.tableColor{
+font-family: "termina";
+font-style: normal;
+font-weight: 500;
+font-size: 60px;
+line-height: 72px;
+color: #3E464D;
+top: 50%;
+left: 50%;
+position: absolute;
+transform: translate(-50%,-50%);
+width: calc(100% - 80px);
+
+}
+.tableColor td{
+    padding:5px;
+    cursor: pointer;
+}
+.fontw1{
+    font-weight: 100;
+    transition: font-weight .3s ease-in-out;
+
+    &:hover{
+        font-weight: 800;
+    }
+}
+.fontw2{
+    font-weight: 200;
+    transition: font-weight .3s ease-in-out;
+    &:hover{
+        font-weight: 700;
+    }
+}
+.fontw3{
+    font-weight: 300;
+    transition: font-weight .3s ease-in-out;
+    &:hover{
+        font-weight: 600;
+    }
+}
+.fontw4{
+    font-weight: 400;
+    transition: font-weight .3s ease-in-out;
+    &:hover{
+        font-weight: 500;
+    }
+}
+.fontw5{
+    font-weight: 500;
+    transition: font-weight .3s ease-in-out;
+    &:hover{
+        font-weight: 400;
+    }
+}
+.fontw6{
+    font-weight: 600;
+    transition: font-weight .3s ease-in-out;
+    &:hover{
+        font-weight: 300;
+    }
+}
+.fontw7{
+    font-weight: 700;
+    transition: font-weight .3s ease-in-out;
+    &:hover{
+        font-weight: 200;
+    }
+}
+.fontw8{
+    font-weight: 800;
+    transition: font-weight .3s ease-in-out;
+    &:hover{
+        font-weight: 100;
+    }
+}
+@keyframes parpadeo {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }

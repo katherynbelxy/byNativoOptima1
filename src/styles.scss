@@ -4,6 +4,11 @@
     font-family: $IBM;
     src: url('./assets/fonts/IBMPlexSans-Medium.woff') format('woff');
 }
+@font-face {
+    font-family: 'Brom Sans';
+    src: url("./assets/fonts/BromSans/Brom2020-Reg.otf");
+   
+}
 
 //Reseteo de estilos 
 html,
@@ -116,6 +121,9 @@ body {
     background-color: #EBEBEC;
 
 }
+a{
+    text-decoration: none !important;
+}
 
 ol,
 ul {
@@ -172,6 +180,19 @@ table {
     font-weight: bold;
     font-size: 18px;
     line-height: 25px;
+}
+
+
+.SubTitle{
+    font-family:$IBM;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+}
+
+
     //texto para enlaces de descarga
     .textDownload {
         font-family: $IBM;
@@ -192,7 +213,7 @@ table {
             cursor: pointer;
         }
     }
-}
+
 
 //Botones negros
 .btnBlack {
@@ -415,3 +436,13 @@ table {
     margin-left: auto;
     margin-right: auto;
 }
+
+// Extra large devices (large desktops, 1200px and up)
+/*
+@media (min-width: 1200px) { 
+    body{
+        background-color:red;
+    }
+
+
+ }*/
