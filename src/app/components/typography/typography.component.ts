@@ -6,15 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./typography.component.scss']
 })
 export class TypographyComponent implements OnInit {
-
+  fontSize=50;
+  lineHeight=60;
   constructor() { }
 
   saverange(newValue) {
    console.log(newValue);
   } 
   
-valueChanged(e) {
-  console.log('e', e);
+valueChangedFontSize(e) {
+  this.fontSize=e;
+}
+valueChangedLineheight(e) {
+  this.lineHeight=e;
 }
 
 

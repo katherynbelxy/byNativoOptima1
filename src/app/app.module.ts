@@ -9,8 +9,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ColorsComponent } from './components/colors/colors.component';
 import { LogosComponent } from './components/logos/logos.component';
 import { TypographyComponent } from './components/typography/typography.component';
-import { MatMenuModule } from '@angular/material/menu';
-
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -25,7 +24,7 @@ import { MatMenuModule } from '@angular/material/menu';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatMenuModule
+    FormsModule
   
   ],
   providers: [],

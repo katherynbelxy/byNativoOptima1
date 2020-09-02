@@ -8,7 +8,7 @@ $negro:#000000;
 //Tipografia
 $IBM: 'IBM Plex Sans';
 //Margenes ejemplo  m-t-100
-$spaceamounts: (5, 10, 15, 20, 22, 25, 30, 35, 40, 45, 50, 61, 75, 81, 100, 107, 115, 125, 138); // Adjust this to include the pixel amounts you need.
+$spaceamounts: (5, 10, 15, 20, 22, 25, 30, 35, 40, 45, 50,60, 61, 75, 81, 100, 107, 115, 125, 138); // Adjust this to include the pixel amounts you need.
 $sides: (top, bottom, left, right); // Leave this variable alone
 @each $space in $spaceamounts {
     @each $side in $sides {

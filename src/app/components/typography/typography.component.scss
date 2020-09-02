@@ -1,13 +1,19 @@
 @import '../../../variables';
+.sectionTypography{
+   background-color: #d4d4d4;
+   overflow: hidden;
+   padding-top: 102px;
+   position: relative;
+}
 .section1Typography{
     min-height: 730px;
     height: auto;
-    font-family: 'termina' ,sans-serif;
     background: $blanco2;
 }
 .section1Typography .tp1{
     font-style: normal;
     font-weight: normal;
+    font-family: 'termina' ,sans-serif;
     font-size: 50px;
     line-height: 60px;
     color: #FFFFFF;
@@ -35,7 +41,14 @@
 .colorRed{
     background-color : $red;
 }
+.custom-range{
+    border:none !important;
+    
+}
+.custom-range:focus {
 
+    outline: none;
+ }
 
 
 input[type='range'],
@@ -59,6 +72,131 @@ input[type=range]::-webkit-slider-runnable-track {
   background-color: #000000;
   height: 1px;
 }
+.section2Typography{
+    max-height: 509px;
+    height: 509px;
+    background-color: #d4d4d4;
+
+}
+
+.Sectio2Tp2{
+    background-color: $red;
+    height: 100%;
+    margin-left: -15px;
+    position: relative;
+}
 
 
+.texCentersection2{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 400px;
+}
+.texCentersection4{
+    margin-left: 315px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 400px;
 
+}
+.textoimgTypo{
+    background-image: url("../../../assets/imgTypography/TheArtOfWork.svg");
+    width: 500px;
+    height: 150px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+.section3Typography{
+    max-height: 521px;
+    height: 521px;
+    margin-bottom: 97px;
+   
+
+}
+.section4Typography{
+    max-height: 435px;
+    height: 435px;
+    background-color:$blanco2 ;
+}
+.section5Typography{
+    max-height: 1005px;
+    height:1005px;
+    background-color: #E5E5E5;
+ 
+}
+
+
+.Sectio3Tp2{
+    background-color: $gris;
+    height: 100%;
+    margin-left: -15px;
+    position: relative;
+}
+.textoimgTypoNum{
+    background-image: url("../../../assets/imgTypography/Termina_Numbers.svg");
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.imgABC{
+    background-image: url("../../../assets/imgTypography/Brom_Alphabet.svg");
+    height: 100%;
+    background-repeat: no-repeat;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+.imgABCContainer{
+    background-color: $red;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+}
+.imgABCContainerGris{
+    background-color:#E5E5E5 ;
+}
+.tipoStairs{
+    background-image: url("../../../assets/imgTypography/Brom_Glyps.svg");
+    height: 207px;
+    background-repeat: no-repeat;
+    max-width: 722px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.tipoStairs2{
+    background-image: url("../../../assets/imgTypography/Brom_Signage_Type.svg");
+    height: 500px;
+    background-repeat: no-repeat;
+    max-width: 750px;
+    margin:0 auto;
+    margin-top: 45px;
+}
+.Btnfooter{
+    height: 40px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    bottom: 0;
+}
+.container-fluid{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.Sectio2Tp1{
+    height: 100%;
+    position: relative;
+}
+.Sectio3Tp1{
+    background-color: red;
+    margin-right: -15px;
+    height: 100%;
+
+}

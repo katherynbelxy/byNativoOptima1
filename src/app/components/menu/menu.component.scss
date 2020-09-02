@@ -2,7 +2,14 @@
 nav{
   background-color: $blanco2;
   border-bottom: 1px solid $negro;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  top:0;
 
+}
+.logoByNativo{
+  text-decoration: none;
 }
 .navbar-nav{
   border-top: 1px solid $negro;
@@ -21,5 +28,9 @@ font-weight: bold;
 font-size: 35px;
 line-height: 42px;
 color:$red;
+}
+nav.navbar{
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
