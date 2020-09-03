@@ -14,6 +14,7 @@ export class ColorsComponent implements OnInit {
     $(function () {
       $('[data-toggle="tooltip"]').tooltip()
     })
+    
   }
 
 }
