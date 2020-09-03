@@ -12,7 +12,9 @@ export class ColorsComponent implements OnInit {
 
   ngOnInit(): void {
     $(function () {
-      $('[data-toggle="tooltip"]').tooltip()
+      $('[data-toggle="tooltip"]').tooltip({
+        template: '<div class="tooltip" role="tooltip"><div class="arrow"></div><div class="large tooltip-inner"></div></div>'
+      })
     })
     
   }
