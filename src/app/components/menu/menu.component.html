@@ -4,21 +4,20 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-end m-r-107 " id="navbarText">
-      <ul class="navbar-nav p-b-0 p-t-10">
-        <li class="nav-item active m-r-60">
-          <a class="nav-link "  [routerLink]="['/Logos']">Logos </a>
-        </li>
-        <li class="nav-item m-r-60">
-          <a class="nav-link"  [routerLink]="['/Colors']">Colors</a>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link "  [routerLink]="['/Typography']">Typography</a>
-        </li>
-      </ul>
-     
+        <ul class="navbar-nav p-b-0 p-t-10">
+            <li class="nav-item m-r-60" routerLinkActive="active">
+                <a class="nav-link " [routerLink]="['/Logos']">Logos </a>
+            </li>
+            <li class="nav-item m-r-60" routerLinkActive="active">
+                <a class="nav-link" [routerLink]="['/Colors']">Colors</a>
+            </li>
+            <li class="nav-item " routerLinkActive="active">
+                <a class="nav-link " [routerLink]="['/Typography']">Typography</a>
+            </li>
+        </ul>
+
     </div>
     <div class="hola">
 
     </div>
-  </nav>
-  
+</nav>
