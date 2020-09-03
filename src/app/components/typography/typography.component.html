@@ -2,7 +2,7 @@
     <section class="row section1Typography p-t-61">
         <div class="col-sm-12 col-md-6 section1TypographyDiv colorRed">
             <div class="tp1 m-l-107 " [ngStyle]="{'font-size': fontSize+'px','line-height': lineHeight+'px','font-family': opcionSeleccionado,'font-weight': opcionSeleccionadoCapturarFont}">
-                <p contenteditable="true" (click)="clickparpadeo()"  class="parrafoLineParpadea"><span *ngIf="noneSisplay"  class="LineParpadea"></span> Try typing here and change the settings to see the brand fonts </p>
+                <p contenteditable="true" (click)="clickparpadeo()" class="parrafoLineParpadea"><span *ngIf="noneSisplay" class="LineParpadea"></span> Try typing here and change the settings to see the brand fonts </p>
             </div>
         </div>
         <div class="col-sm-12 col-md-6 section1TypographyDiv">
@@ -12,29 +12,21 @@
                     Typography
                 </p>
                 <p class="text m-t-30">
-                    
-                    The Optima tone is clean and
-                    confident, with a touch of
-                    warmth. We’re very proud of
-                    our community and what it
-                    offers, that’s our Typography selection says about us. We believe that it can
-                    have a transformative impact a
-                    company and its professionals,
-                    and we must always sound
-                    excited to share our vision
-                    with likeminded people.
+
+                    The Optima tone is clean and confident, with a touch of warmth. We’re very proud of our community and what it offers, that’s our Typography selection says about us. We believe that it can have a transformative impact a company and its professionals, and
+                    we must always sound excited to share our vision with likeminded people.
                 </p>
 
                 <div class="m-t-40">
                     <div class="form-row">
                         <div class="col">
-                            <select [(ngModel)]="opcionSeleccionado" (change)="capturarFont()"  class="custom-select mr-sm-2" id="inlineFormCustomSelect1">
+                            <select [(ngModel)]="opcionSeleccionado" (change)="capturarFont()" class="custom-select mr-sm-2" id="inlineFormCustomSelect1">
                                 <option value="termina" selected>Termina</option>
                                 <option value="Brom Sans">Brom Sans</option>
                             </select>
                         </div>
                         <div class="col" *ngIf="opcionSeleccionado=='termina'">
-                            <select [(ngModel)]="opcionSeleccionadoCapturarFont"  class="custom-select mr-sm-2" id="inlineFormCustomSelect2">
+                            <select [(ngModel)]="opcionSeleccionadoCapturarFont" class="custom-select mr-sm-2" id="inlineFormCustomSelect2">
                                 <option value="200" >Extra Light</option>
                                 <option value="300">Light</option>
                                 <option value="100">Thin</option>
@@ -47,7 +39,7 @@
                             </select>
                         </div>
                         <div class="col" *ngIf="opcionSeleccionado=='Brom Sans'">
-                            <select [(ngModel)]="opcionSeleccionadoCapturarFont"  class="custom-select mr-sm-2" id="inlineFormCustomSelect2">
+                            <select [(ngModel)]="opcionSeleccionadoCapturarFont" class="custom-select mr-sm-2" id="inlineFormCustomSelect2">
                                 <option value="300">Light</option>
                                 <option value="100">Thin</option>
                                 <option value="400" selected>Regular</option>
@@ -63,15 +55,13 @@
                         <div class="col">
                             <div class="input-group">
                                 <span class="input-group-addon iconSelect1"><img src="../../../assets/iconos/Text_Size_Icon.svg"></span>
-                                <input type="range" class="custom-range form-control" min="10" max="90"
-                                    (input)="valueChangedFontSize($event.target.value)" id="customRange1">
+                                <input type="range" class="custom-range form-control" min="10" max="90" (input)="valueChangedFontSize($event.target.value)" id="customRange1">
                             </div>
                         </div>
                         <div class="col">
                             <div class="input-group">
                                 <span class="input-group-addon iconSelect2"><img src="../../../assets/iconos/Leading_Icon.svg"></span>
-                                <input type="range" (input)="valueChangedLineheight($event.target.value)"
-                                    class="custom-range form-control" min="10" max="100" id="customRange2">
+                                <input type="range" (input)="valueChangedLineheight($event.target.value)" class="custom-range form-control" min="10" max="100" id="customRange2">
                             </div>
                         </div>
                     </div>
@@ -82,7 +72,7 @@
     <section class="row section2Typography">
         <div class="col-sm-12 col-md-6 ">
             <div class="Sectio2Tp1 m-l-107">
-                <div class="texCentersection2">             
+                <div class="texCentersection2">
                     <p class="title">
                         Termina
                     </p>
@@ -90,30 +80,22 @@
                         For marketing use
                     </p>
                     <p class="text m-t-30 m-b-40">
-                        The Optima tone is clean and
-                        confident, with a touch of
-                        warmth. We’re very proud of
-                        our community and what it
-                        offers, that’s our Typography selection says about us. We believe that it can
-                        have a transformative impact a
-                        company and its professionals,
-                        and we must always sound
-                        excited to share our vision
-                        with likeminded people.
+                        The Optima tone is clean and confident, with a touch of warmth. We’re very proud of our community and what it offers, that’s our Typography selection says about us. We believe that it can have a transformative impact a company and its professionals, and
+                        we must always sound excited to share our vision with likeminded people.
                     </p>
                     <a class="textDownload colorBlack">
                         Get it here
                     </a>
                 </div>
             </div>
-            
+
         </div>
         <div class="col-sm-12 col-md-6 ">
             <div class="Sectio2Tp2 m-r-107">
                 <div class="textoimgTypo"> </div>
             </div>
-           
-           
+
+
         </div>
 
     </section>
@@ -123,84 +105,84 @@
 
                 <table class="tableColor">
                     <tr>
-                        <td class="fontw1">a</td>
-                        <td class="fontw2">a</td>
-                        <td class="fontw3">a</td>
-                        <td class="fontw4">a</td>
-                        <td class="fontw5">a</td>
-                        <td class="fontw6">a</td>
-                        <td class="fontw7">a</td>
-                        <td class="fontw8">a</td>
+                        <td class="fontw1 f1" aria-label="f1">a</td>
+                        <td class="fontw2 f2" aria-label="f2">a</td>
+                        <td class="fontw3 f3" aria-label="f3">a</td>
+                        <td class="fontw4 f4" aria-label="f4">a</td>
+                        <td class="fontw5 f5" aria-label="f5">a</td>
+                        <td class="fontw6 f6" aria-label="f6">a</td>
+                        <td class="fontw7 f7" aria-label="f7">a</td>
+                        <td class="fontw8 f8" aria-label="f8">a</td>
                     </tr>
                     <tr>
-                        <td class="fontw1">b</td>
-                        <td class="fontw2">b</td>
-                        <td class="fontw3">b</td>
-                        <td class="fontw4">b</td>
-                        <td class="fontw5">b</td>
-                        <td class="fontw6">b</td>
-                        <td class="fontw7">b</td>
-                        <td class="fontw8">b</td>
+                        <td class="fontw1 f1" aria-label="f1">b</td>
+                        <td class="fontw2 f2" aria-label="f2">b</td>
+                        <td class="fontw3 f3" aria-label="f3">b</td>
+                        <td class="fontw4 f4" aria-label="f4">b</td>
+                        <td class="fontw5 f5" aria-label="f5">b</td>
+                        <td class="fontw6 f6" aria-label="f6">b</td>
+                        <td class="fontw7 f7" aria-label="f7">b</td>
+                        <td class="fontw8 f8" aria-label="f8">b</td>
                     </tr>
                     <tr>
-                        <td class="fontw1">c</td>
-                        <td class="fontw2">c</td>
-                        <td class="fontw3">c</td>
-                        <td class="fontw4">c</td>
-                        <td class="fontw5">c</td>
-                        <td class="fontw6">c</td>
-                        <td class="fontw7">c</td>
-                        <td class="fontw8">c</td>
+                        <td class="fontw1 f1" aria-label="f1">c</td>
+                        <td class="fontw2 f2" aria-label="f2">c</td>
+                        <td class="fontw3 f3" aria-label="f3">c</td>
+                        <td class="fontw4 f4" aria-label="f4">c</td>
+                        <td class="fontw5 f5" aria-label="f5">c</td>
+                        <td class="fontw6 f6" aria-label="f6">c</td>
+                        <td class="fontw7 f7" aria-label="f7">c</td>
+                        <td class="fontw8 f8" aria-label="f8">c</td>
                     </tr>
                     <tr>
-                        <td class="fontw1">d</td>
-                        <td class="fontw2">d</td>
-                        <td class="fontw3">d</td>
-                        <td class="fontw4">d</td>
-                        <td class="fontw5">d</td>
-                        <td class="fontw6">d</td>
-                        <td class="fontw7">d</td>
-                        <td class="fontw8">d</td>
+                        <td class="fontw1 f1" aria-label="f1">d</td>
+                        <td class="fontw2 f2" aria-label="f2">d</td>
+                        <td class="fontw3 f3" aria-label="f3">d</td>
+                        <td class="fontw4 f4" aria-label="f4">d</td>
+                        <td class="fontw5 f5" aria-label="f5">d</td>
+                        <td class="fontw6 f6" aria-label="f6">d</td>
+                        <td class="fontw7 f7" aria-label="f7">d</td>
+                        <td class="fontw8 f8" aria-label="f8">d</td>
                     </tr>
                     <tr>
-                        <td class="fontw1">e</td>
-                        <td class="fontw2">e</td>
-                        <td class="fontw3">e</td>
-                        <td class="fontw4">e</td>
-                        <td class="fontw5">e</td>
-                        <td class="fontw6">e</td>
-                        <td class="fontw7">e</td>
-                        <td class="fontw8">e</td>
+                        <td class="fontw1 f1" aria-label="f1">e</td>
+                        <td class="fontw2 f2" aria-label="f2">e</td>
+                        <td class="fontw3 f3" aria-label="f3">e</td>
+                        <td class="fontw4 f4" aria-label="f4">e</td>
+                        <td class="fontw5 f5" aria-label="f5">e</td>
+                        <td class="fontw6 f6" aria-label="f6">e</td>
+                        <td class="fontw7 f7" aria-label="f7">e</td>
+                        <td class="fontw8 f8" aria-label="f8">e</td>
                     </tr>
                     <tr>
-                        <td class="fontw1">f</td>
-                        <td class="fontw2">f</td>
-                        <td class="fontw3">f</td>
-                        <td class="fontw4">f</td>
-                        <td class="fontw5">f</td>
-                        <td class="fontw6">f</td>
-                        <td class="fontw7">f</td>
-                        <td class="fontw8">f</td>
+                        <td class="fontw1 f1" aria-label="f1">f</td>
+                        <td class="fontw2 f2" aria-label="f2">f</td>
+                        <td class="fontw3 f3" aria-label="f3">f</td>
+                        <td class="fontw4 f4" aria-label="f4">f</td>
+                        <td class="fontw5 f5" aria-label="f5">f</td>
+                        <td class="fontw6 f6" aria-label="f6">f</td>
+                        <td class="fontw7 f7" aria-label="f7">f</td>
+                        <td class="fontw8 f8" aria-label="f8">f</td>
                     </tr>
 
                 </table>
 
             </div>
-            
+
         </div>
         <div class="col-sm-12 col-md-6  ">
-            <div  class="Sectio3Tp2 m-r-107">
+            <div class="Sectio3Tp2 m-r-107">
                 <div class="textoimgTypoNum"></div>
             </div>
-            
-           
+
+
         </div>
 
     </section>
 
     <section class="row section4Typography">
         <div class="col-sm-12 col-md-6  ">
-            <div class="texCentersection4">             
+            <div class="texCentersection4">
                 <p class="title">
                     Brom Sans
                 </p>
@@ -208,20 +190,14 @@
                     Custom typeface
                 </p>
                 <p class="text m-t-30 m-b-40">
-                    This custom typeface was created inhouse
-                    and has a modern, dynamic
-                    character with a variable aesthetic.
-                    The different weights were designed
-                    to interact with one another just like
-                    the letters in our wordmark. This
-                    bespoke typeface can be applied to
-                    signage, headlines, titles and more
+                    This custom typeface was created inhouse and has a modern, dynamic character with a variable aesthetic. The different weights were designed to interact with one another just like the letters in our wordmark. This bespoke typeface can be applied to signage,
+                    headlines, titles and more
                 </p>
                 <a class="textDownload colorBlack dowImage">
                     Download
                 </a>
             </div>
-    
+
         </div>
 
     </section>
@@ -244,6 +220,6 @@
         </a>
     </section>
 
-    
+
 
 </div>
