@@ -56,6 +56,11 @@ clickparpadeo(){
       $(this).parent().next('tr').find('.'+b).addClass('rojito')
       $(this).parent().next('tr').find('.'+c).addClass('rojito')
     })
-  }
+    $('td').on('mouseleave', function(){
+     
+      $('td').removeClass('rojito')
+    
+  })
+}
 
 }
