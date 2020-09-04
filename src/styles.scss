@@ -118,7 +118,8 @@ body {
     overflow-x: hidden !important;
     -webkit-font-smoothing: antialiased !important;
     text-rendering: optimizeLegibility;
-    background-color:white;
+    background-color: white;
+}
 
 a {
     text-decoration: none !important;
@@ -445,14 +446,3 @@ table {
 .bs-tooltip-top .arrow::before {
     border-top-color: #E7E7E7;
 }
-
-// Extra large devices (large desktops, 1200px and up)
-
-/*
-@media (min-width: 1200px) { 
-    body{
-        background-color:red;
-    }
-
-
- }*/

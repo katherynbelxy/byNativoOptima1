@@ -40,7 +40,7 @@
 
 .section2 {
     .slide {
-        width: 44.4vw;
+        width: calc(100vw - 55.5vw);
         float: right;
         .name {
             margin: 214px auto 214px auto;
@@ -86,7 +86,7 @@
 }
 
 .section5 {
-    background-color:$blanco;
+    background-color: $blanco;
     .logoBig {
         margin: 66px auto 186.87px auto;
     }
@@ -101,4 +101,8 @@
         float: right;
         margin-right: 107px;
     }
+}
+
+.izq {
+    max-width: calc(100% - 55.5vw);
 }
