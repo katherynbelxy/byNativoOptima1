@@ -8,6 +8,9 @@ nav{
   top:0;
 
 }
+nav .nav-link:hover{
+  color: $red !important;
+}
 .logoByNativo{
   text-decoration: none;
 }
@@ -33,4 +36,9 @@ nav.navbar{
   padding-left: 0px;
   padding-right: 0px;
 }
-
+.navbar-light .navbar-nav .nav-link{
+  color:$negro;
+}
+.nav-item.active .nav-link{
+  color: $red !important  ;
+}
