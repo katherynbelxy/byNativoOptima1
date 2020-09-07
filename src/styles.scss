@@ -118,7 +118,8 @@ body {
     overflow-x: hidden !important;
     -webkit-font-smoothing: antialiased !important;
     text-rendering: optimizeLegibility;
-    background-color:white;
+    background-color: white;
+}
 
 a {
     text-decoration: none !important;
@@ -477,5 +478,16 @@ table {
     }
 }
 
-// Extra large devices (large desktops, 1200px and up)
+//Estilos Tooltip
+.tooltip-inner {
+    background-color: #E7E7E7;
+    border-radius: 8px;
+    color: $negro;
+    font-family: $IBM;
+    padding: 10px 15px 10px 15px;
+    font-weight: normal;
+}
 
+.bs-tooltip-top .arrow::before {
+    border-top-color: #E7E7E7;
+}
