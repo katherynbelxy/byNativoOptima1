@@ -191,6 +191,57 @@ table {
     color: #000000;
 }
 
+// Animacion arrow hang
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }
+    @-ms-keyframes #{$animation-name} {
+        @content;
+    }
+    @-o-keyframes #{$animation-name} {
+        @content;
+    }
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+
+@mixin animation($str,
+$str2) {
+    -webkit-animation: #{$str},
+    #{$str2};
+    -moz-animation: #{$str},
+    #{$str2};
+    -ms-animation: #{$str},
+    #{$str2};
+    -o-animation: #{$str},
+    #{$str2};
+    animation: #{$str},
+    #{$str2};
+}
+
+@include keyframes(icon1) {
+    100% {
+        transform: translateY(-50%);
+    }
+}
+
+@include keyframes(icon2) {
+    0% {
+        transform: translateY(-50%);
+    }
+    50% {
+        transform: translateY(-20%);
+    }
+    100% {
+        transform: translateY(-50%);
+    }
+}
+
 //texto para enlaces de descarga
 .textDownload {
     font-family: $IBM;
@@ -198,6 +249,8 @@ table {
     line-height: 120%;
     font-weight: 500;
     position: relative;
+    cursor: pointer;
+    width: fit-content;
     &::before {
         content: '';
         position: absolute;
@@ -207,8 +260,13 @@ table {
         background-size: contain;
         left: 100px;
         top: 50%;
-        transform: translateY(-50%);
+        transform: translateY(-50%) translateZ(0);
         cursor: pointer;
+    }
+    &:hover::before,
+    &:active::before {
+        @include animation('.3s ease-out 0s 1 normal forwards icon1',
+        '1.5s ease-in-out .3s infinite alternate forwards icon2');
     }
 }
 
@@ -246,7 +304,7 @@ table {
         left: 0;
         right: 0;
         bottom: 0;
-        background:$red;
+        background: $red;
         transform: scaleX(0);
         transform-origin: 0 50%;
         transition-property: transform;
@@ -255,17 +313,18 @@ table {
     }
 }
 
-
-
- 
-  .btnBlack:hover, .btnBlack:focus, .btnBlack:active {
+.btnBlack:hover,
+.btnBlack:focus,
+.btnBlack:active {
     color: white;
-  }
-  .btnBlack:hover:before, .btnBlack:focus:before, .btnBlack:active:before {
+}
+
+.btnBlack:hover:before,
+.btnBlack:focus:before,
+.btnBlack:active:before {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
-  }
-  
+}
 
 //Agregar clase si la flecha del botón apunta a la derecha
 .btnRight {
@@ -313,170 +372,169 @@ table {
 }
 
 //Palabras Optima
-    @mixin word {
-        width: 320px;
-        height: 55px;
-        background-size: contain;
-        background: center no-repeat;
-    }
+@mixin word {
+    width: 320px;
+    height: 55px;
+    background-size: contain;
+    background: center no-repeat;
+}
 
-    .nameRed {
-        @include word();
-        background-image: url('./assets/iconos/nameRed.svg');
-    }
+.nameRed {
+    @include word();
+    background-image: url('./assets/iconos/nameRed.svg');
+}
 
-    .nameGray {
-        @include word();
-        background-image: url('./assets/iconos/nameGray.svg');
-    }
+.nameGray {
+    @include word();
+    background-image: url('./assets/iconos/nameGray.svg');
+}
 
-    .nameWhite {
-        @include word();
-        background-image: url('./assets/iconos/nameWhite.svg');
-    }
+.nameWhite {
+    @include word();
+    background-image: url('./assets/iconos/nameWhite.svg');
+}
 
-    //Palabras Optima con nombre de torre
-    @mixin word2 {
-        width: 277px;
-        height: 72px;
-    }
+//Palabras Optima con nombre de torre
+@mixin word2 {
+    width: 277px;
+    height: 72px;
+}
 
-    .nameRed2 {
-        @include word();
-        @include word2();
-        background-image: url('./assets/iconos/nameRed2.svg');
-    }
+.nameRed2 {
+    @include word();
+    @include word2();
+    background-image: url('./assets/iconos/nameRed2.svg');
+}
 
-    .nameGray2 {
-        @include word();
-        @include word2();
-        background-image: url('./assets/iconos/nameGray2.svg');
-    }
+.nameGray2 {
+    @include word();
+    @include word2();
+    background-image: url('./assets/iconos/nameGray2.svg');
+}
 
-    .nameWhite2 {
-        @include word();
-        @include word2();
-        background-image: url('./assets/iconos/nameWhite2.svg');
-    }
+.nameWhite2 {
+    @include word();
+    @include word2();
+    background-image: url('./assets/iconos/nameWhite2.svg');
+}
 
-    //Palabras de Optima logos
-    @mixin word3 {
-        height: 35px;
-    }
+//Palabras de Optima logos
+@mixin word3 {
+    height: 35px;
+}
 
-    .nameRed3 {
-        @include word();
-        @include word3();
-        width: 350.83px;
-        background-image: url('./assets/iconos/nameRed3.svg');
-    }
+.nameRed3 {
+    @include word();
+    @include word3();
+    width: 350.83px;
+    background-image: url('./assets/iconos/nameRed3.svg');
+}
 
-    .nameGray3 {
-        @include word();
-        @include word3();
-        width: 389.27px;
-        background-image: url('./assets/iconos/nameGray3.svg');
-    }
+.nameGray3 {
+    @include word();
+    @include word3();
+    width: 389.27px;
+    background-image: url('./assets/iconos/nameGray3.svg');
+}
 
-    .nameWhite3 {
-        @include word();
-        @include word3();
-        width: 406.34px;
-        background-image: url('./assets/iconos/nameWhite3.svg');
-    }
+.nameWhite3 {
+    @include word();
+    @include word3();
+    width: 406.34px;
+    background-image: url('./assets/iconos/nameWhite3.svg');
+}
 
-    //Letras de Optima logo
-    @mixin logo() {
-        width: 150px;
-        height: 150px;
-        background-size: contain;
-        background: no-repeat center;
-    }
+//Letras de Optima logo
+@mixin logo() {
+    width: 150px;
+    height: 150px;
+    background-size: contain;
+    background: no-repeat center;
+}
 
-    .logoGray {
-        @include logo();
-        background-image: url('./assets/iconos/logoGray.svg');
-    }
+.logoGray {
+    @include logo();
+    background-image: url('./assets/iconos/logoGray.svg');
+}
 
-    .logoWhite {
-        @include logo();
-        background-image: url('./assets/iconos/logoWhite.svg');
-    }
+.logoWhite {
+    @include logo();
+    background-image: url('./assets/iconos/logoWhite.svg');
+}
 
-    .logoRed {
-        @include logo();
-        width: 180px;
-        height: 180px;
-        background-image: url('./assets/iconos/logoRed.svg');
-    }
+.logoRed {
+    @include logo();
+    width: 180px;
+    height: 180px;
+    background-image: url('./assets/iconos/logoRed.svg');
+}
 
-    //Logo nombre completo y grande con grid
-    .logoBig {
-        width: 1019px;
-        height: 391px;
-        background: url('./assets/iconos/logoBig.svg') no-repeat center;
-        background-size: contain;
-    }
+//Logo nombre completo y grande con grid
+.logoBig {
+    width: 1019px;
+    height: 391px;
+    background: url('./assets/iconos/logoBig.svg') no-repeat center;
+    background-size: contain;
+}
 
-    //Flechas para slide
-    .arrowSlide {
-        width: 42px;
-        height: 27px;
-        cursor: pointer;
-        position: absolute;
-        background: url('./assets/iconos/arrrowSlideWhite.svg') center no-repeat;
-        background-size: contain;
-        bottom: 30px;
-        &.arrowBlack {
-            background-image: url('./assets/iconos/arrowSlideBlack.svg');
-        }
-        &.arrowRight {
-            right: 30px;
-        }
-        &.arrowLeft {
-            left: 30px;
-            transform: rotate(180deg);
-        }
+//Flechas para slide
+.arrowSlide {
+    width: 42px;
+    height: 27px;
+    cursor: pointer;
+    position: absolute;
+    background: url('./assets/iconos/arrrowSlideWhite.svg') center no-repeat;
+    background-size: contain;
+    bottom: 30px;
+    &.arrowBlack {
+        background-image: url('./assets/iconos/arrowSlideBlack.svg');
     }
-
-    //Colores de fondo
-    .bgG {
-        background: $gris;
+    &.arrowRight {
+        right: 30px;
     }
-
-    .bgG2 {
-        background: $grisClaro;
+    &.arrowLeft {
+        left: 30px;
+        transform: rotate(180deg);
     }
+}
 
-    .bgW {
-        background: $blanco;
-    }
+//Colores de fondo
+.bgG {
+    background: $gris;
+}
 
-    .bgR {
-        background: $red;
-    }
+.bgG2 {
+    background: $grisClaro;
+}
 
-    //Contenedor de textos
-    .cic {
-        max-width: 394px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+.bgW {
+    background: $blanco;
+}
 
-    //Estilos Tooltip
-    .tooltip-inner {
-        background-color: #E7E7E7;
-        border-radius: 8px;
-        color: $negro;
-        font-family: $IBM;
-        padding: 10px 15px 10px 15px;
-        font-weight: normal;
-    }
+.bgR {
+    background: $red;
+}
 
-    .bs-tooltip-top .arrow::before {
-        border-top-color: #E7E7E7;
-    }
+//Contenedor de textos
+.cic {
+    max-width: 394px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+//Estilos Tooltip
+.tooltip-inner {
+    background-color: #E7E7E7;
+    border-radius: 8px;
+    color: $negro;
+    font-family: $IBM;
+    padding: 10px 15px 10px 15px;
+    font-weight: normal;
+}
+
+.bs-tooltip-top .arrow::before {
+    border-top-color: #E7E7E7;
+}
 
 //Estilos Tooltip
 .tooltip-inner {
